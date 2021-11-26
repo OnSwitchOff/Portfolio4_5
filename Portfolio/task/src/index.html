@@ -3,19 +3,71 @@
 <head>
     <meta charset="utf-8">
     <title>Hello, World!</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1>Jane Doe</h1>
-    <h2>About me</h2>
-    <img src="img/person.jpg">
-    <p>In the first stage, you need to create a simple web page.
-        It should have the following HTML elements: top-level heading,
-        two second-level headings, at least one paragraph of text,
-        and at least two images.</p>
+<nav id="home">
+    <div>
+        <a href="#about">About me</a>
+    </div>
+    <div>
+        <a href="#portfolio">Portfolio</a>
+    </div>
+    <div>
+        <a href="#contacts">Contacts</a>
+    </div>
+    <div>
+        <a href="#home">Home</a>
+    </div>
+</nav>
+<header>
+    <h1>Jane Doe,</h1>
+    <h1>Front-end developer</h1>
+</header>
+<section id="about">
+    <div class="pics">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="description">
+        <h2>About me</h2>
+        <p>In the first stage, you need to create a simple web page.
+            It should have the following HTML elements: top-level heading,
+            two second-level headings, at least one paragraph of text,
+            and at least two images.</p>
+    </div>
+</section>
+<section id="portfolio">
     <h2>Portfolio</h2>
-    <img src="img/project1.png">
-    <p>FlashCard</p>
-    <img src="img/project2.png">
-    <p>Virtual Piano</p>
+    <div class="flashCard"><button class="open-window">FlashCard</button></div>
+    <div class="virtualPiano"><button class="open-window">Virtual Piano</button></div>
+</section>
+<section id="contacts">
+    <h2>Contacts</h2>
+    <span>You can contact us at <a href="mailto:example@mail.com">mailto:example@mail.com</a></span>
+    <span>or phone number - <a href=tel:+76891321313213">+76891321313213</a></span>
+    <div class="socialContainer">
+        <a href="https://github.com/OnSwitchOff"><img src="img/github.svg" alt="Github"/></a>
+        <a href="https://github.com/OnSwitchOff"><img src="img/facebook.svg" alt="Github"/></a>
+        <a href="https://github.com/OnSwitchOff"><img src="img/twitter.svg" alt="Github"/></a>
+        <a href="https://github.com/OnSwitchOff"><img src="img/instagram%201.svg" alt="Github"/></a>
+    </div>
+</section>
+<section id="popUpWindow" class="window">
+    <div class="panel">
+        <h1>FlashCards</h1>
+        <p>You can see th project at the following link:<a href="https://github.com/OnSwitchOff">flashcards</a></p>
+        <p>I did this project when i was studying the frontend on HyperSkill,
+            I created a web page with flip-down flash cards? learned some HTML basics and learned
+            CSS can easily make a beautiful design.
+        </p>
+        <button>Close</button>
+    </div>
+</section>
+<footer>
+    <h2>Jane Doe</h2>
+    <span>2021</span>
+</footer>
+<script rel="script" src="index.js"/>
 </body>
 </html>
